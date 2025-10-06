@@ -12,5 +12,5 @@ public class If_Else {
             System.out.println("you can not vote");
         }
         System.out.println("programm run succesfully");
-    }
+    } 
 }
