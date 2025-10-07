@@ -1,9 +1,11 @@
 package elseif;
+
 import java.util.Scanner;
+
 public class DayName {
 
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         int day;
         System.out.print("enter day number : ");
         day = sc.nextInt();
