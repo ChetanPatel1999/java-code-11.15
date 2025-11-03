@@ -2,12 +2,14 @@ package class_and_object;
 
 public class Monitor {
 
-    private String cName;
+    private String cName; //data member
     private int price;
     private String color;
     private float rating;
 
-    public void setMonitor(String s, int p, String c, float r) {
+    public void setMonitor(String s, int p, String c, float r)// methods 
+    {
+      
         cName = s;
         price = p;
         color = c;
@@ -22,5 +24,4 @@ public class Monitor {
         System.out.println("monitor rating : " + rating);
         System.out.println("-----------------------------");
     }
-
 }

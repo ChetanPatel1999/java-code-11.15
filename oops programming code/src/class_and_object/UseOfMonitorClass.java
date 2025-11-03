@@ -9,6 +9,13 @@ public class UseOfMonitorClass {
         m2.setMonitor("Dell", 1500, "white", 2.5f);
         m1.getMonitor();
         m2.getMonitor();
+
+        Student s1 = new Student();
+        s1.setStudent("yogesh mandloi", 101, 70);
+        s1.getResultCard();
+        Student s2 = new Student();
+        s1.setStudent("Koushtubh phadnis", 102, 25);
+        s1.getResultCard();
     }
 
 }
