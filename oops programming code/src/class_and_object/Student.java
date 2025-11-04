@@ -24,13 +24,4 @@ public class Student {
         }
         System.out.println("-----------------------------");
     }
-
-    public static void main(String[] args) {
-        Student s1 = new Student();
-        s1.setStudent("yogesh mandloi", 101, 70);
-        s1.getResultCard();
-        Student s2 = new Student();
-        s1.setStudent("Koushtubh phadnis", 102, 25);
-        s1.getResultCard();
-    }
 }
