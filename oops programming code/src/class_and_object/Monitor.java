@@ -9,7 +9,7 @@ public class Monitor {
 
     public void setMonitor(String s, int p, String c, float r)// methods 
     {
-      
+
         cName = s;
         price = p;
         color = c;
@@ -17,6 +17,7 @@ public class Monitor {
     }
 
     public void getMonitor() {
+        
         System.out.println("Monitor info :- ");
         System.out.println("monitor name : " + cName);
         System.out.println("monitor price : " + price);

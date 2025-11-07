@@ -2,9 +2,9 @@ package class_and_object;
 
 public class Circle {
 
-    public double radius;
-    public double area;
-    public double circumference;
+    private double radius;
+    private double area;
+    private double circumference;
 
     public void setRadius(double r) {
         radius = r;
