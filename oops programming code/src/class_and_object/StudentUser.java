@@ -15,10 +15,9 @@ public class StudentUser {
         s2.getResultCard();
         s3.getResultCard();
         s4.getResultCard();
-        
-        
-        s1.getTotalResult();
-        s2.getTotalStudent();
-       
+
+        Student.getTotalResult();
+        Student.getTotalStudent();
+
     }
 }
