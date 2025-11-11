@@ -1,8 +1,9 @@
 package class_and_object;
 
 public class StudentUser {
-
+    
     public static void main(String[] args) {
+        Student.setCollageName("holker");
         Student s1 = new Student();
         Student s2 = new Student();
         Student s3 = new Student();
@@ -15,9 +16,8 @@ public class StudentUser {
         s2.getResultCard();
         s3.getResultCard();
         s4.getResultCard();
-
+        
         Student.getTotalResult();
-        Student.getTotalStudent();
-
+        Student.getTotalStudent(); 
     }
 }

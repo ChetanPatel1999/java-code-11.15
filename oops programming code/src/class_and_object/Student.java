@@ -8,7 +8,7 @@ public class Student {
     private static int totalpass = 0;
     private static int totalfail = 0;
     private static int totalstudent = 0;
-    private static String collageName = "hello world institue";
+    private static String collageName;
 
     public void setStudent(String n, int r, float p) {
         name = n;
@@ -52,5 +52,9 @@ public class Student {
     public static void classInfo() {
         System.out.println("hi i am student class");
         System.out.println("i have 4-5 methods");
+    }
+
+    public static void setCollageName(String c) {
+        collageName = c;
     }
 }
