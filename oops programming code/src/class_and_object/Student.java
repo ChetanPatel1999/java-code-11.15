@@ -57,4 +57,31 @@ public class Student {
     public static void setCollageName(String c) {
         collageName = c;
     }
+
+//    public void average(Student obj) {
+//        float ave;
+//        ave = (per + obj.per) / 2;
+//        System.out.println("avrage of " + name + " and " + obj.name + " = " + ave);
+//    }
+    public static void average(Student obj1, Student obj2) {
+        float ave;
+        ave = (obj1.per + obj2.per) / 2;
+        System.out.println("avrage of " + obj1.name + " and " + obj2.name + " = " + ave);
+    }
+
+    public static void average(Student obj1, Student obj2, Student obj3) {
+        float ave;
+        ave = (obj1.per + obj2.per + obj3.per) / 3;
+        System.out.println("avrage of " + obj1.name + " and " + obj2.name + " and " + obj3.name + " = " + ave);
+    }
+
+    public static void greterMarks(Student obj1, Student obj2) {
+        if (obj1.per > obj2.per) {
+            System.out.println(obj1.name + " have greater marks from " + obj2.name);
+        } else {
+            System.out.println(obj2.name + " have greater marks from " + obj1.name);
+
+        }
+    }
+
 }
