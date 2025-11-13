@@ -23,6 +23,7 @@ public class StudentUser {
         Student.average(s1, s4);
         Student.average(s2, s4);
         Student.average(s2, s4, s3);
+        Student.average(s2, s4, s3, s4);
 
         Student.greterMarks(s3, s2);
     }

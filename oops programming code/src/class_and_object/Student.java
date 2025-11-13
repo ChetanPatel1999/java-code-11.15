@@ -63,16 +63,26 @@ public class Student {
 //        ave = (per + obj.per) / 2;
 //        System.out.println("avrage of " + name + " and " + obj.name + " = " + ave);
 //    }
-    public static void average(Student obj1, Student obj2) {
+//    public static void average(Student obj1, Student obj2) {
+//        float ave;
+//        ave = (obj1.per + obj2.per) / 2;
+//        System.out.println("avrage of " + obj1.name + " and " + obj2.name + " = " + ave);
+//    }
+//
+//    public static void average(Student obj1, Student obj2, Student obj3) {
+//        float ave;
+//        ave = (obj1.per + obj2.per + obj3.per) / 3;
+//        System.out.println("avrage of " + obj1.name + " and " + obj2.name + " and " + obj3.name + " = " + ave);
+//    }
+    //varargs method
+    public static void average(Student... obj) {
         float ave;
-        ave = (obj1.per + obj2.per) / 2;
-        System.out.println("avrage of " + obj1.name + " and " + obj2.name + " = " + ave);
-    }
-
-    public static void average(Student obj1, Student obj2, Student obj3) {
-        float ave;
-        ave = (obj1.per + obj2.per + obj3.per) / 3;
-        System.out.println("avrage of " + obj1.name + " and " + obj2.name + " and " + obj3.name + " = " + ave);
+        float sum = 0;
+        int i;
+        for (i = 0; i < obj.length; i++) {
+            sum = sum + obj[i].per;
+        }
+        System.out.println("averege =  " + (sum / obj.length));
     }
 
     public static void greterMarks(Student obj1, Student obj2) {
