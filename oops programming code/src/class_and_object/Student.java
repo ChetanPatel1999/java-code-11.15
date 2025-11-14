@@ -10,7 +10,9 @@ public class Student {
     private static int totalstudent = 0;
     private static String collageName;
 
-    public void setStudent(String n, int r, float p) {
+    Student() {}
+
+    Student(String n, int r, float p) {
         name = n;
         rno = r;
         per = p;
@@ -23,6 +25,30 @@ public class Student {
 
     }
 
+    Student(String n, int r) {
+        name = n;
+        rno = r;
+        totalstudent++;
+        if (per >= 33) {
+            totalpass++;
+        } else {
+            totalfail++;
+        }
+
+    }
+
+//    public void setStudent(String n, int r, float p) {
+//        name = n;
+//        rno = r;
+//        per = p;
+//        totalstudent++;
+//        if (per >= 33) {
+//            totalpass++;
+//        } else {
+//            totalfail++;
+//        }
+//
+//    }
     public void getResultCard() // non static method    
     {
         System.out.println("Student Result Card :");

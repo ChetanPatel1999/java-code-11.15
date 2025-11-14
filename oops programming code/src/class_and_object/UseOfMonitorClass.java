@@ -10,11 +10,11 @@ public class UseOfMonitorClass {
         m1.getMonitor();
         m2.getMonitor();
 
-        Student s1 = new Student();
-        s1.setStudent("yogesh mandloi", 101, 70);
+        Student s1 = new Student("yogesh mandloi", 101, 70);
+//        s1.setStudent("yogesh mandloi", 101, 70);
         s1.getResultCard();
-        Student s2 = new Student();
-        s1.setStudent("Koushtubh phadnis", 102, 25);
+        Student s2 = new Student("Koushtubh phadnis ", 102, 25);
+//        s1.setStudent("Koushtubh phadnis", 102, 25);
         s1.getResultCard();
     }
 
