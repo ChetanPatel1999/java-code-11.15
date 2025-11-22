@@ -5,7 +5,8 @@ public class EngStud extends Student {
     private String branch;
     private int sem;
 
-    public void setEngStud(String branch, int sem) {
+    public EngStud(String name, int rno, String branch, int sem) {
+        super(name, rno);
         this.branch = branch;
         this.sem = sem;
     }
