@@ -21,5 +21,12 @@ public class ResultProcessing {
 //        s2.getStudent();
 //        s2.getMediStud();
 //        s2.result(40);
+        Student s5 = new MediStud("yogesh", 106, 3, "dental");
+        s5.getStudent();
+        s5.result(45);
+
+        Object o1, o2;
+        o1 = new Student("aa", 12);
+        o2 = new MediStud("bb", 12, 45, "abc");
     }
 }

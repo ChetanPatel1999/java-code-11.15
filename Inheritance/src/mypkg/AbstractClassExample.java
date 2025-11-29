@@ -2,7 +2,8 @@ package mypkg;
 
 abstract class Base //abstract class
 {
-    abstract void m1();  //abstract method
+
+    protected abstract void m1();  //abstract method
 
     abstract void m2();  //abstract method
 
@@ -11,7 +12,7 @@ abstract class Base //abstract class
         System.out.println("Base class m3 is called");
     }
 
-    void m4() //concreat method
+    static void m4() //concreat method
     {
         System.out.println("Base class m4 is called");
     }
@@ -19,7 +20,7 @@ abstract class Base //abstract class
 
 class Derived extends Base {
 
-    void m1()// override abstract method
+    public void m1()// override abstract method
     {
         System.out.println("Derived class m1 method");
     }
@@ -33,6 +34,9 @@ class Derived extends Base {
 public class AbstractClassExample {
 
     public static void main(String[] args) {
+        Base b1;
+        b1 = new Derived();
+        b1.m1();
         Derived d1 = new Derived();
         d1.m1();
         d1.m2();

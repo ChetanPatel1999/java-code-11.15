@@ -5,7 +5,8 @@ public class MediStud extends Student {
     private int prof;
     private String speci;
 
-    public void setMediStud(int prof, String speci) {
+    public MediStud(String name, int rno, int prof, String speci) {
+        super(name, rno);
         this.prof = prof;
         this.speci = speci;
 
