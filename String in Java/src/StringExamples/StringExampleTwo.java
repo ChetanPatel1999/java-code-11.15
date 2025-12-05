@@ -57,13 +57,13 @@ public class StringExampleTwo {
 //        System.out.println(s1.indexOf("indore"));
 //------------------------------------------------
         String s1 = "indore,ujjain,ratlam";
-        String[] arr = s1.split("u");
+        String[] arr = s1.split(",");
         for(String s:arr)
         {
             System.out.println(s);
         }
     }
-
+   
 }
 //String methods 
 //str.length()  // return type is int
