@@ -1,5 +1,6 @@
 package ExceptionExamples;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ExceptionExampleOne {
@@ -9,10 +10,9 @@ public class ExceptionExampleOne {
         int[] arr = {12, 34, 56, 78, 90};
         int index = 0;
         System.out.print("enter a index : ");
-        index = sc.nextInt(); //3
         try {
             index = sc.nextInt(); //3
-        } catch (Exception e) {
+        } catch (InputMismatchException e) {
             System.out.println("input data type is wrong");
         }
         try {
